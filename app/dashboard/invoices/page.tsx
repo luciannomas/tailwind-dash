@@ -9,6 +9,16 @@ import { lusitana } from '@/app/ui/font';
 import Table from '@/app/ui/invoices/table';
 import { fetchInvoicesPages } from '@/app/lib/data';
 
+import { Metadata } from 'next';
+ 
+/* export const metadata: Metadata = {
+  title: 'Invoices | Acme Dashboard',
+}; */
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
+
 export default async function Page({
   searchParams,
 }: {

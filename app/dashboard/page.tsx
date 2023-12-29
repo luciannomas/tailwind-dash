@@ -7,6 +7,12 @@ import { Suspense } from 'react';
 import { RevenueChartSkeleton } from '../ui/skeletons';
 import RevenueChart from '../ui/dashboard/revenue-chart';
 
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Home',
+};
+
 
 export default async function Page() {
   const latestInvoices = await fetchLatestInvoices();
